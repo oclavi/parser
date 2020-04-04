@@ -1,0 +1,25 @@
+{
+    "SCHEMA": {
+        "id": "IMAGE_NAME",
+        "image_id": "IMAGE_NAME",
+        "category_id": {
+            "to_check": "LABEL_NAME",
+            "to_get": "$.LABEL_NAME"
+        },
+        "segmentation": {
+            "to_check": "EDGES_POLY",
+            "to_get": "$.EDGES_POLY"
+        },
+        "bbox": {
+            "to_check": "EDGES_RECT",
+            "to_get": "$.EDGES_RECT.START_X, $.EDGES_RECT.START_Y, $.EDGES_RECT.WIDTH, $.EDGES_RECT.HEIGHT"
+        }
+    },
+    "DATA_TYPE": {
+        "id": "string",
+        "image_id": "string",
+        "category_id": "string",
+        "segmentation": "list",
+        "bbox": "list"
+    }
+}
