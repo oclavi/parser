@@ -20,6 +20,8 @@
 	 - GCP
 	 - ONEDRIVE
 	 - AZURE_STORAGE
+ - Models
+     - coco
 
 ## Executing
 
@@ -31,7 +33,7 @@
 	 - project_id
 	 - token
 	 - activeStorage 
- 5. Run the **test.py*** file,
+ 5. Run the **test.py** file,
 	> python python/test.py
 
 ```mermaid
